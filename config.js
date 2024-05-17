@@ -10,17 +10,16 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Velocidad de Internet en Bolivia',
-    subtitle: '(velocidad de descarga en conexiones fijas)',
-    byline: 'Ciudatos Lab',
+    title: 'Desigualdades espaciales en la velocidad de internet en Bolivia',
+    subtitle: 'Por: Ciudatos Lab',
+    byline: 'En este mapa, mientras más altos los picos, más alta la velocidad de internet.',
     footer: 'Lab TecnoSocial',
     chapters: [
         {
             id: 'intro',
             alignment: 'left',
             hidden: false,
-            title: 'Intro',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'Este mapa muestra la velocidad de descarga de internet fijo en Bolivia. Y, aunque en general la población ya está conectada, podemos observar desigualdades espaciales de este servicio en nuestro país.',
             location: {
                 center: [-65.89659, -16.29181],
                 zoom: 7.1,
@@ -49,7 +48,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'La Paz',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            description: 'En La Paz hay una diferencia marcada de velocidad entre los municipio de La Paz y El Alto. También podemos ver que la zona con mejor internet y velocidad de descarga es la zona sur, donde vive gente con mayores recursos económicos, en barrios consolidados y privilegiados.',
             location: {
                 center: [-68.15098, -16.47928],
                 zoom: 9.0,
@@ -77,8 +76,8 @@ var config = {
             id: 'Cochabamba',
             alignment: 'left',
             hidden: false,
-            title: 'Machacamarca',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: 'Cochabamba',
+            description: 'En el área metropolitana de Cochabamba podemos ver que las zonas centrales tienen mayor velocidad de internet que las periferias, donde la población vive en condiciones precarias y con menos recursos. La diferencia entre el norte y el sur de de Cochabamba es muy grande.',
             location: {
                 center: [-66.16441, -17.38932],
                 zoom: 9.0,
@@ -106,13 +105,41 @@ var config = {
             id: 'Santa Cruz',
             alignment: 'left',
             hidden: false,
-            title: 'Porco',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: 'Santa Cruz',
+            description: 'En Santa Cruz está el mismo patrón espacial. Existe una zona central consolidada, con gente económicamente pudiente que puede costearse mejores servicios de internet, en comparación a las zonas periféricas donde el internet es más lento y no se cuenta con la infraestructura de telecomunicaciones suficiente.',
             location: {
                 center: [-63.18777, -17.78555],
                 zoom: 9.0,
                 pitch: 45.0,
                 bearing: -24.07
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 1,
+                //     duration: 5000
+                // }
+            ],
+            onChapterExit: [
+                // {
+                //     layer: 'layer-name',
+                //     opacity: 0
+                // }
+            ]
+        },
+        {
+            id: 'intro',
+            alignment: 'left',
+            hidden: false,
+            description: 'El mapa nos muestra que existen brechas espaciales de calidad del acceso. La velocidad de internet es mejor en los centros que en las periferias, al igual que la distribución espacial de otros servicios básicos.',
+            location: {
+                center: [-65.89659, -16.29181],
+                zoom: 7.1,
+                pitch: 45.0,
+                bearing: -9.0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
