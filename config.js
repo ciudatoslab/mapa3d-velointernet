@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/labtecnosocial/clw9hbhnk00yo01qg54txefxl',
-    accessToken: 'pk.eyJ1IjoibGFidGVjbm9zb2NpYWwiLCJhIjoiY2ttaHJ2N2FwMGE4NjJ5cXVneHN2cWRzYiJ9.MT3xcDnYAz2m1LvjBHRQwQ',
+    accessToken: 'pk.eyJ1IjoibGFidGVjbm9zb2NpYWwiLCJhIjoiY2x3YXBoZHRuMGNjeTJxbDlsYzR6YTZvbSJ9.W3NtaACZrCZY7G4Zb9qjbg',
     showMarkers: false,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
