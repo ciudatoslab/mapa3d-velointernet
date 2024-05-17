@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+    color: #0071bc;
+}
+
+#header {
+    background-color: #222B3C;
+    color: white;
+}
+
+#header h1 {
+    font-size: 35px;
+}
+
+#header h3 {
+    font-size: 14px;
+}
+
+#header p {
+    font-size: 16px;
+}
+
+h3,
+p {
+    color: #C3C3C3;
+}
+
+#map {
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+#mapInset {
+    bottom: 50px;
+    right: 30px;
+    height: 180px;
+    width: 250px;
+    max-width: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+
+#mapInset .mapboxgl-ctrl-bottom-left {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #mapInset {
+        display: none;
+    }
+}
+
+#header {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+#header h1,
+#header h2,
+#header p {
+    margin: 0;
+    padding: 1.8vh 1.58vw;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#footer {
+    width: 100%;
+    min-height: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    line-height: 25px;
+    font-size: 13px;
+    position: relative;
+    z-index: 5;
+    background-color: #F2ECE1;
+}
+
+#features {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.centered {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.lefty {
+    width: 33vw;
+    margin-left: 5vw;
+}
+
+.righty {
+    width: 33vw;
+    margin-left: 62vw;
+}
+
+.fully {
+    width: 100%;
+    margin: auto;
+}
+
+.light {}
+
+.dark {}
+
+.step {
+    padding-bottom: 50vh;
+    /* margin-bottom: 10vh; */
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 0.9;
+
+}
+
+.step div {
+    padding: 25px 50px;
+    line-height: 25px;
+    font-size: 13px;
+    background-color: #FAFAFA;
+    /* border and shadow */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.step div h3 {
+    font-size: 14px;
+    color: #3F3F3F;
+}
+
+.step div p {
+    font-size: 14px;
+    color: #676767;
+}
+
+.step img {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+
+    .centered,
+    .lefty,
+    .righty,
+    .fully {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    #header h1,
+    #header h2,
+    #header p {
+        padding: 1vh 1.5vw;
+        text-align: center;
+    }
+
+    #header h1 {
+        font-size: 30px;
+    }
+}
+
+/* Fix issue on mobile browser where scroll breaks  */
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+.mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+    touch-action: unset;
+}

@@ -10,10 +10,6 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Desigualdades espaciales en la velocidad de internet en Bolivia',
-    subtitle: 'Por: Ciudatos Lab',
-    byline: 'En este mapa, mientras más altos los picos, más alta la velocidad de internet.',
-    footer: 'Lab TecnoSocial',
     chapters: [
         {
             id: 'intro',
