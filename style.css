@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +17,33 @@ a:visited {
     background-color: #222B3C;
     color: white;
 }
+
+#text {
+    background-color: #fbfbfb;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    padding: 1.8vh 1.58vw;
+    text-align: center;
+    margin: 0;
+}
+
+#text p {
+    color: #444954; 
+    font-size: 14px; 
+}
+
+button {
+    font-family: "Rubik", sans-serif;
+    background-color: #1c5b92;
+    padding: 1.8vh;
+    color: #FAFAFA;
+    border: none;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
 
 #header h1 {
     font-size: 35px;
