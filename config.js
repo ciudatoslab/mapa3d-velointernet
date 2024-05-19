@@ -44,7 +44,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'La Paz',
-            description: 'En La Paz hay una diferencia marcada de velocidad entre los municipio de La Paz y El Alto. También podemos ver que la zona con mejor internet y velocidad de descarga es la zona sur, donde vive gente con mayores recursos económicos, en barrios consolidados y privilegiados.',
+            description: 'En La Paz hay una diferencia marcada de velocidad entre los municipio de La Paz y El Alto. También podemos ver que la zona con mejor internet y velocidad de descarga es la zona sur, donde vive gente en barrios consolidados y con mayores recursos económicos.',
             location: {
                 center: [-68.15098, -16.47928],
                 zoom: 9.0,
